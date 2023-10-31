@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Doctor Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Login_form.css">
+        <script type="text/javascript" src="login_doctor.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body onload="on_load();">
+        <div id="login-form">
+            <h1 style="text-align: center; font-size: 40px; color:white;">Login Doctor</h1>
+            <form id="myForm" action="#" onsubmit="login_post();return false;">
+                <label>Username</label>
+                <input id="username" name="username" type="text" required>
+                <label>Password</label>
+                <input id="password" name="password" type="password" onchange="" required>
+                <button id="login-butt" type="submit" >Login</button>
+                <div id="msg-login" style="font-size: 20px; font-weight: bold;"></div>
+            </form>
+        </div>
+    </body>
+</html>

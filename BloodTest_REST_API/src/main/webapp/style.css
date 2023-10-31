@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Δεκ 2021, 6:55:51 μ.μ.
+    Author     : kosta
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#form-container{
+    border: 5px solid black;
+    background-color: cadetblue;
+    border-radius: 30px;
+    float:left;
+    width: 450px;
+    color:white;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+#myform div{
+    margin-bottom: 10px;
+}
+
+label,input{
+    margin-left: 20px;
+}
+
+input{
+    display: block; 
+}
+
+#submit-butt,#get-butt,#submit-butt-form3
+,#submit-butt-form4,#submit-butt-form5{
+    background-color: black;
+    color:white;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+#monitor{
+    width:1000px;
+    background-color: skyblue;
+    padding-bottom:400px;
+    margin-right: 20px;
+    float: right;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#msg{
+    margin-top: 20px; 
+    visibility: hidden;
+    overflow: scroll;
+}
+
+
+
+
+

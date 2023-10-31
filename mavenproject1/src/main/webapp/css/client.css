@@ -1,0 +1,205 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1 Δεκ 2021, 5:50:16 μ.μ.
+    Author     : loukas
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#container{
+    border: 10px solid black;
+    border-radius: 30px;
+    background-color: cadetblue;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+#form-info{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+#form-info label, #form-info input {
+    margin-top: 10px;
+}
+
+#logout-butt,#change-data-butt,#health-butt ,#doctor-butt,#save-butt,#register-butt,#login-butt,#map-butt,#test-registration-butt,#compare-test-butt,#users-butt,#certified-butt{
+    color:white;
+    margin-top: 5px;
+    border-radius: 10px;    
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(0, 51, 102);
+}
+
+#save-butt{
+    margin-top: 30px !important;
+    background-color: green;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#form-info label {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+
+
+
+#doctor-table {
+    margin-top: 40px;
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+
+}
+#doctor-table th , #health-table th{
+    background-color: rgba(13, 41, 184,0.5);
+    font-size: 20px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+#doctor-table td , #health-table td{
+    font-size: 19px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+
+}
+
+#health-table{
+    margin-top: 40px;
+    width: 40% !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+#health-table tr td{
+    text-align: center;
+}
+
+#map {
+    margin-top: 40px !important;
+    height: 400px;
+    width: 90%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/*pragmatika oti na nai to skefthka mpakalistika */
+#myform div{
+    margin-bottom: 10px !important;
+    width: 350px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: 10px solid transparent;
+    font-size: 20px;
+}
+
+#myform div label{
+    float: left;
+}
+
+
+#myform div input{
+    float:right;
+}
+
+
+#submit-butt{
+    margin-top: 30px;
+    float: none!important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 7px;
+}
+
+
+
+#form3 div{
+    margin-bottom: 10px !important;
+    width: 350px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: 10px solid transparent;
+    font-size: 20px;
+}
+
+#form3 div label{
+    float:left;
+}
+
+#form3 div select{
+    float:right;
+}
+
+#form3 div input{
+    float:right;
+}
+
+
+#submit-butt-form3{
+    margin-top: 30px;
+    float: none!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    display: block;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 7px;
+
+}
+
+#monitor{
+    margin-top: 50px;
+    width: 700px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border: white solid 10px;
+    border-radius: 10px;
+
+}
+
+#msg{
+    height: 300px;
+    overflow: auto;
+}
+
+

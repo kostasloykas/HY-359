@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Admin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/client.css">
+        <script type="text/javascript" src="admin.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+        <div id="container" style="margin-top: 20px;">
+            <button class="button" id="logout-butt" onclick="logout();">Logout</button>
+            <button class="button" id="users-butt" onclick="show_everyone();" >Προβολη Χρηστων</button>
+            <button class="button" id="certified-butt" onclick="show_uncert_doctors();">Πιστοποιηση Γιατρων</button>
+            
+            <div id="message" style="margin-top: 50px;">
+                
+            </div>
+            
+            <div id="users-table" style="margin-top: 50px;" hidden>
+
+            </div>
+            
+            
+            <div id="doctors-table" style="margin-top: 50px;" hidden>
+                <div id="cert-doctors-table" style="margin-top: 50px;" >
+
+                </div>
+                <div id="uncert-doctors-table" style="margin-top: 50px;" >
+
+                </div>
+            </div>
+
+            <div id="uncert-doctors-table2" hidden style="margin-top: 50px;"></div>
+
+        </div>
+
+
+    </body>
+</html>

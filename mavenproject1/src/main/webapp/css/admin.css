@@ -1,0 +1,78 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 Δεκ 2021, 5:16:23 μ.μ.
+    Author     : loykas
+*/
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: cadetblue;
+}
+#container{
+    text-align: center;
+    padding-top: 20px;
+}
+
+button{
+    background-color: black;
+    color:white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+
+table{
+    margin-top: 40px;
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+
+}
+
+
+table th{
+    background-color: rgba(13, 41, 184,0.5);
+    font-size: 20px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+table td{
+    font-size: 19px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+
+}
+
+
+table tr td{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

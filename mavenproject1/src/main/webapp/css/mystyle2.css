@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------ header ----------------- */
+
+header {
+  border: black solid 20px;
+  background-color: black;
+  text-align: center;
+}
+
+#header-title {
+  border: 0;
+  color: cadetblue;
+  font-family: 'Akronim', cursive;
+  font-size: 60px;
+}
+
+#button-bottom {
+  border: none;
+  background-color: cadetblue;
+  margin-top: 60px;
+}
+
+/* ------------ main ----------------- */
+
+.container {
+  margin-top: 100px;
+  border: solid 50px cadetblue;
+  background-color: cadetblue;
+  border-radius: 150px;
+  color: white;
+  margin-bottom: 100px;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.container > h1 {
+  background-color: cadetblue;
+  text-align: center;
+  margin-bottom: 50px;
+  background: none;
+}
+
+#left {
+  margin-left: 50px;
+}
+
+#right {
+  float: right;
+}
+
+#left,
+#right {
+  display: inline-block;
+}
+
+.col1,
+.col2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.col1 > input,
+.col2 > input {
+  display: block;
+  font-size: 15px;
+}
+
+#Password,
+#password-button,
+#stregth-button {
+  display: inline;
+}
+
+#password-button > button,
+#stregth-button > button {
+  background-color: rgb(22, 68, 95);
+  color: white;
+  padding: 5px;
+  height: 30px;
+}
+
+.gender label,
+.gender input {
+  display: inline-block;
+}
+
+.volunteer label,
+.volunteer input {
+  display: inline-block;
+}
+
+#submit-button {
+  display: block;
+  margin-left: 50px;
+  border: solid 10px rgb(22, 68, 95);
+  background-color: rgb(22, 68, 95);
+  font-size: 20px;
+  color: white;
+}
+
+#label-add
+#check-addr-butt,
+#see-map,
+#fill-fields {
+  color: white;
+  padding: 0px 15px;
+  background-color: rgb(22, 68, 95);
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+
+#label-address{
+  display: block;
+}
+
+#Address,
+#check-addr-butt,
+#see-map {
+  display: inline;
+}
+
+#check-addr-butt,
+#see-map,
+#fill-fields {
+  color: white;
+  padding: 0px 15px;
+  background-color: rgb(22, 68, 95);
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+
+#login-butt{
+  background-color: rgb(22, 68, 95);
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="myscript.js"></script>
+
+    </head>
+    <body onload="on_load()">
+        <div id="form-container">
+            <form id="myform" action="#" onsubmit="new_test(); return false;" >
+                <h2 style="margin-top: 10px; margin-bottom: 10px; text-align: center;">New Test:</h2>
+                
+                <div>
+                <label>AMKA:</label>
+                <input type="text" name='amka' id='amka' required pattern="[0-9]{11}" title="amka">
+                </div>
+                
+                <div>
+                <label>Test Date:</label>
+                <input type="date" name='test_date' id="test_date" required>
+                </div>
+                
+                <div>
+                <label>Medical Center:</label>
+                <input type="text" name='medical_center' id='medical_center' pattern="[0-9 a-z A-Z]{0,100}" required>
+                </div>
+                
+                <div>
+                <label>Vitamin d3:</label>
+                <input type="number" step="0.1" min="0.0" name='vitamin_d3' id='vitamin_d3' value="0">
+                </div>
+                
+                
+                <div>
+                <label>Vitamin b12:</label>
+                <input type="number" step="0.1" min="0.0" name='vitamin_b12' id='vitamin_b12' value="0" >
+                </div>
+                
+                
+                <div>
+                <label>Cholesterol:</label>
+                <input type="number" name='cholesterol' step="0.1" min="0.0" id='cholesterol' value="0" >
+                </div>
+                
+                
+                <div>
+                <label>Blood Sugar:</label>
+                <input type="number" name='blood_sugar' step="0.1" min="0.0" id='blood_sugar' value="0">
+                </div>
+                
+                
+                <div>
+                <label>Iron:</label>
+                <input type="number" name='iron' id='iron' step="0.1" min="0" value="0" >
+                </div>
+                
+                <input id="submit-butt" type="submit" value="Υποβολη">
+                <div id="msg-submit" style="font-size: 19px; margin-left: 30px;"></div>                
+
+            </form>
+            
+            <form id="form2" style="margin-top: 20px;" onsubmit="req_get_tests();return false">
+                <div>
+                <label>AMKA:</label>
+                <input type="text" name='amka' id='amka_get' required pattern="[0-9]{11}" title="amka">
+                </div>
+
+                <div>
+                <label>From Date:</label>
+                <input type="date" name='fromDate' id="fromDate" >
+                </div>
+
+                <div>
+                <label>To Date:</label>
+                <input type="date" name='toDate' id="toDate" >
+                </div>
+
+                <input type="submit" id="get-butt" style="margin-left: 20px;" value="Get Tests" >
+            
+            </form>
+            
+            <form id="form3" action="#" style="margin-top: 20px;" onsubmit="req_measure();return false">
+                <div>
+                <label>AMKA:</label>
+                <input type="text" name='amka' id='amka_form3' required pattern="[0-9]{11}" title="amka">
+                </div>
+                
+                <div>
+                    <label>Measure:</label>
+                    <select id="measure" style="display:block; margin-left: 20px;" >
+                        <option value="blood_sugar">Blood Sugar</option>
+                        <option value="iron">Iron</option>
+                        <option value="cholesterol">Cholesterol</option>
+                        <option value="vitamin_d3">Vitamin D3</option>
+                        <option value="vitamin_b12">Vitamin B12</option>
+                    </select>
+                </div>
+                
+                <input type="submit" id="submit-butt-form3" style="margin-left: 20px;" value="Get Tests" >
+            </form>
+            
+            
+            <form id="form4" action="#" style="margin-top: 20px;" onsubmit="req_update();return false">
+                
+                <div>
+                    <label>Id Test:</label>
+                    <input id="id_test" type="number" min="0" required style="width: 100px;">
+                </div>
+                
+                <div>
+                    <label>Value:</label>
+                    <input id="value_measure" type="number"  required step="0.1" style="width: 60px;">
+                </div>
+                
+                <div>
+                    <label>Measure:</label>
+                    <select id="measure-form4" style="display:block; margin-left: 20px;" >
+                        <option value="blood_sugar">Blood Sugar</option>
+                        <option value="iron">Iron</option>
+                        <option value="cholesterol">Cholesterol</option>
+                        <option value="vitamin_d3">Vitamin D3</option>
+                        <option value="vitamin_b12">Vitamin B12</option>
+                    </select>
+                </div>
+                <input type="submit" id="submit-butt-form4" style="margin-left: 20px;" value="Update Test" >
+                <div id="msg-submit-form4" style="font-size: 19px; margin-left: 30px;"></div>                
+
+            </form>
+            
+            
+            <form id="form5" action="#" style="margin-top: 20px;" onsubmit="req_delete();return false">
+                <div>
+                    <label>Id Test:</label>
+                    <input id="id_test_form5" type="number" min="0" required style="width: 100px;">
+                </div>
+                <input type="submit" id="submit-butt-form5" style="margin-left: 20px;" value="Delete Test" >
+                <div id="msg-submit-form5" style="font-size: 19px; margin-left: 30px;"></div>                                
+            </form>
+            
+            
+        </div>
+        <div id="monitor">
+            <h1>DISPLAY</h1>
+            <div id="msg" ></div>
+        </div>
+
+    </body>
+</html>

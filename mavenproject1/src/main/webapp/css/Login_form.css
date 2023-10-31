@@ -1,0 +1,48 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 Νοε 2021, 3:22:14 μ.μ.
+    Author     : loukas
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#login-form{
+    margin-top: 30px;
+    color:white;
+    border: black solid 10px;
+    border-radius: 30px;    
+    padding-bottom: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: cadetblue;
+    text-align: center; 
+}
+
+#login-form label, #login-form  input{
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+}
+
+#login-form  input{
+    margin-left: auto;    
+    margin-right: auto;        
+}
+#login-butt{
+    color:white;
+    margin-top: 30px;
+    border-radius: 10px;    
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(0, 51, 102);
+}
+
+
+
+

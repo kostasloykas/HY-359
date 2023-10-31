@@ -1,0 +1,8 @@
+
+
+To cross site scripting to ekana me thn akolou8i entoli "script>document.body.style.backgroundColor="red"</script>"
+kai sigkekrimena thn topo8ethsa mesa sto doctor-info input. Etsi to ekxorousa mesa sthn bash dedomenwn kai otan
+ksana eperne ta stoixeia apo tn bash sthn ousia ektelouse to script me apotelesma na allakso to background-color.
+
+O tropos gia na asfalisw thn istoselida htan na checkarw an kapoio input periexei ta tags style h script , an nai tote
+akurwnetai h ekxwrish sthn bash kai kanei alert. 
